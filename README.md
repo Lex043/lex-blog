@@ -1,6 +1,6 @@
 # Blog Website
 
-A Blog website. [View Live Demo]()
+A Blog website. [View Live Demo](https://lex043-blog.netlify.app/)
 
 ## Built with
 
@@ -13,7 +13,7 @@ A Blog website. [View Live Demo]()
 1. Clone the repository
 
 ```bash
-git clone https://github.com/lex043/lex-blog
+git clone https://github.com/Lex043/lex-blog
 ```
 
 2. Navigate into repository

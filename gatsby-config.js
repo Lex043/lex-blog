@@ -25,6 +25,7 @@ module.exports = {
         linkResolver: require("./src/utilities/linkResolver").linkResolver,
         schemas: {
           post: require("./schemas/post.json"),
+          about: {},
         },
       },
     },

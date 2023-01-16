@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 const PostList = () => {
   const data = useStaticQuery(graphql`
     query {
-      allPrismicPost(sort: { fields: data___date }, limit: 6) {
+      allPrismicPost(sort: { fields: data___date }, limit: 9) {
         nodes {
           data {
             date(formatString: "MMM DD, YYYY")

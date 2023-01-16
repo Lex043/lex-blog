@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 const PostList = () => {
   const data = useStaticQuery(graphql`
     query {
-      allPrismicPost(limit: 6) {
+      allPrismicPost(sort: { fields: data___date }, limit: 6) {
         nodes {
           data {
             date(formatString: "MMM DD, YYYY")
@@ -22,7 +22,7 @@ const PostList = () => {
     }
   `);
   return (
-    <article className="grid grid-cols-1 gap-4 my-7 sm:grid-cols-2 md:grid-cols-3">
+    <article className="grid grid-cols-1 gap-4 my-7 md:grid-cols-3">
       {data.allPrismicPost.nodes.map((node) => (
         <Link
           to={`/blog/${node.uid}`}

@@ -25,7 +25,7 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allPrismicPost {
+    allPrismicPost(sort: { fields: data___date }) {
       nodes {
         data {
           date(formatString: "MMM DD, YYYY")

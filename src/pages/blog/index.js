@@ -7,7 +7,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout>
       <h1 className="text-white mt-10 text-4xl font-bold underline">Blog</h1>
-      <article className="grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 md:grid-cols-3">
+      <article className="grid grid-cols-1 gap-4 my-5 sm:grid-cols-2 lg:grid-cols-3">
         {data.allPrismicPost.nodes.map((node) => (
           <Link
             to={`/blog/${node.uid}`}

@@ -22,7 +22,7 @@ const PostList = () => {
     }
   `);
   return (
-    <article className="grid grid-cols-1 gap-4 my-7 md:grid-cols-3">
+    <article className="grid grid-cols-1 gap-4 my-7 sm:grid-cols-2 lg:grid-cols-3">
       {data.allPrismicPost.nodes.map((node) => (
         <Link
           to={`/blog/${node.uid}`}

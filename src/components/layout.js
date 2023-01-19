@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   `);
   return (
     <section className="bg-[#252526] flex flex-col justify-between px-5 py-5 xl:px-16 min-h-screen font-mainFont">
-      <div>
+      <section>
         <nav className="flex justify-between items-center py-3">
           <h1 className="text-white text-[1.2rem]">
             <Link to="/">LEX BLOG</Link>
@@ -34,11 +34,11 @@ const Layout = ({ children }) => {
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
 
       <main>{children}</main>
       <footer className="flex flex-col gap-3 sm:flex-row sm:justify-between">
-        <div className="text-white text-sm flex gap-2">
+        <section className="text-white text-sm flex gap-2">
           <a
             className="underline"
             href="https://github.com/lex043"
@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
           >
             LN
           </a>
-        </div>
+        </section>
         <p className="text-white text-sm">
           Crafted with love by&nbsp;
           <a

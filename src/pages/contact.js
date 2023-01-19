@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <section className="text-white flex flex-col gap-6 md:flex-row md:justify-center">
-        <div>
+        <aside>
           <h1 className="text-xs">WHATSAPP & CALL</h1>
           <a
             className="underline text-xl"
@@ -16,8 +16,8 @@ const ContactPage = () => {
           >
             +2348120506478
           </a>
-        </div>
-        <div>
+        </aside>
+        <aside>
           <h1 className="text-xs">EMAIL</h1>
           <a
             className="underline text-xl"
@@ -27,8 +27,8 @@ const ContactPage = () => {
           >
             alexferanmi390@gmail.com
           </a>
-        </div>
-        <div>
+        </aside>
+        <aside>
           <h1 className="text-xs">TWITTER</h1>
           <a
             className="underline text-xl"
@@ -38,7 +38,7 @@ const ContactPage = () => {
           >
             @Lex_Feranmi
           </a>
-        </div>
+        </aside>
       </section>
     </Layout>
   );

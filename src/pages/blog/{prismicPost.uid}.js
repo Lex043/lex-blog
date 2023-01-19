@@ -6,13 +6,13 @@ import Seo from "../../components/Seo";
 const BlogPost = ({ data }) => {
   return (
     <Layout>
-      <section className="md:mx-8">
+      <article className="md:mx-8">
         <h1 className="text-white mt-5 text-2xl font-bold">
           {data.prismicPost.data.title.text}
         </h1>
         <p className="text-white text-xs">{data.prismicPost.data.date}.</p>
         <p className="text-white my-5">{data.prismicPost.data.content.text}</p>
-      </section>
+      </article>
     </Layout>
   );
 };
